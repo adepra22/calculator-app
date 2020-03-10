@@ -30,6 +30,38 @@ namespace Calculator
 
             Console.WriteLine();
 			
+			if (pil > 0 && pil < 5)
+            {
+
+                Console.Write("Inputkan nilai a = ");
+                int a = int.Parse(Console.ReadLine());
+
+                Console.Write("Inputkan nilai b = ");
+                int b = Convert.ToInt32(Console.ReadLine());
+                switch (pil)
+                {
+                    case 1:
+                        Console.WriteLine("Hasil Penambahan: {0} + {1} = {2}", a, b, Penambahan(a,b));
+                        break;
+                    case 2:
+                        Console.WriteLine("Hasil Penambahan: {0} - {1} = {2}", a, b, Pengurangan(a,b));
+                        break;
+                    case 3:
+                        Console.WriteLine("Hasil Penambahan: {0} * {1} = {2}", a, b, Perkalian(a,b));
+                        break;
+                    case 4:
+                        Console.WriteLine("Hasil Penambahan: {0} / {1} = {2}", a, b, Pembagian(a,b));
+                        break;
+                }
+            }
+            else
+            {
+                Console.WriteLine("Maaf, menu yang Anda pilih tidak tersedia");
+            }
+
+
+            Console.WriteLine();
+			
 			Console.WriteLine("\nTekan sembarang key untuk keluar");
 			Console.ReadKey();
 		}
