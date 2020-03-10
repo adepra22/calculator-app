@@ -5,8 +5,8 @@ class Calculator
 		int a = 10;
 		int b = 6;
 		
-		Console.WritLine("Hasil Penambahan: {0} + {1} = {2}", a, b, Penambahan(a,b));
-		Console.WritLine("Hasil Pengurangan: {0} - {1} = {2}", a, b, Pengurangan(a,b));
+		Console.WriteLine("Hasil Penambahan: {0} + {1} = {2}", a, b, Penambahan(a,b));
+		Console.WriteLine("Hasil Pengurangan: {0} - {1} = {2}", a, b, Pengurangan(a,b));
 		
 		Console.WriteLine("\nTekan sembarang key untuk keluar");
 		Console.ReadKey();
